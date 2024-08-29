@@ -1,0 +1,107 @@
+ا* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+body { 
+    background-color: var(--Light-pink);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Source Serif 4', serif;
+    font-family: 'Work Sans', sans-serif;
+    background-image: url(images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+img , svg {
+    max-width: 100%;
+    display: block;
+}
+
+.accord-btn {
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 0 ;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border: 0;
+}
+button:hover{
+    color:hsl(284.28deg 91.87% 62.69%);
+}
+
+.section-qoestion{
+    max-width: 569px;
+    background-color: var(--White);
+    padding: 20px;
+    margin: 16px;
+    border-radius: 16px;
+    position: relative;
+    top: 140px;
+}
+
+
+.titlesec {
+    font-size: 29px;
+    font-weight: 800;
+    position: relative;
+    bottom: 38px;
+    left: 56px;
+}
+.javabsoalaval{
+    
+    background-color: var(--White);
+    overflow: hidden;
+    font-size: 16px;
+    color: var(--Grayish-purple);
+   padding-bottom: 7px;
+   transition: max-heightn 200ms ease;
+    }
+
+
+
+    .javabsoalaval.active {
+        display: block;
+      }
+      hr {
+        height: 1px;
+        background-color: var(--Light-pink);
+        border: none;
+      }
+      
+      .section-qoestion,
+      .icon-minus,
+      img {
+        min-width: 30px;
+      }
+      
+      .icon-minus,
+      .javabsoalaval {
+        display: none;
+      }
+
+    @media  screen and (max-width: 375px) {
+      
+         body{
+            background-image: url(images/background-pattern-mobile.svg);
+    background-size: 100%;
+
+        }
+      }
